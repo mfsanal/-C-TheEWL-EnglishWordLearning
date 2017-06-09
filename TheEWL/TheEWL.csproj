@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29C7F7AE-AE48-42D6-A00A-C8E69257EFD3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheEWL</RootNamespace>
+    <AssemblyName>TheEWL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPair.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminPair.Designer.cs">
+      <DependentUpon>AdminPair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTestList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminTestList.Designer.cs">
+      <DependentUpon>AdminTestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTestNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminTestNew.Designer.cs">
+      <DependentUpon>AdminTestNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWordList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminWordList.Designer.cs">
+      <DependentUpon>AdminWordList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWordNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminWordNew.Designer.cs">
+      <DependentUpon>AdminWordNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainLearnedWords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainLearnedWords.Designer.cs">
+      <DependentUpon>MainLearnedWords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainStatislics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainStatislics.Designer.cs">
+      <DependentUpon>MainStatislics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainTests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainTests.Designer.cs">
+      <DependentUpon>MainTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ALogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALogin.Designer.cs">
+      <DependentUpon>ALogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestLearnWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestLearnWord.Designer.cs">
+      <DependentUpon>TestLearnWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestListenFind.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestListenFind.Designer.cs">
+      <DependentUpon>TestListenFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestListenWrite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestListenWrite.Designer.cs">
+      <DependentUpon>TestListenWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestSelectWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestSelectWord.Designer.cs">
+      <DependentUpon>TestSelectWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="theFunctions.cs" />
+    <Compile Include="theWord.cs" />
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPair.resx">
+      <DependentUpon>AdminPair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTestList.resx">
+      <DependentUpon>AdminTestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTestNew.resx">
+      <DependentUpon>AdminTestNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminWordList.resx">
+      <DependentUpon>AdminWordList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminWordNew.resx">
+      <DependentUpon>AdminWordNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainLearnedWords.resx">
+      <DependentUpon>MainLearnedWords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainStatislics.resx">
+      <DependentUpon>MainStatislics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainTests.resx">
+      <DependentUpon>MainTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALogin.resx">
+      <DependentUpon>ALogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestLearnWord.resx">
+      <DependentUpon>TestLearnWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestListenFind.resx">
+      <DependentUpon>TestListenFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestListenWrite.resx">
+      <DependentUpon>TestListenWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestSelectWord.resx">
+      <DependentUpon>TestSelectWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_bgg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker_30x30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i_no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i_wa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
